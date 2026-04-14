@@ -145,9 +145,9 @@ export default {
       
       if (option._id === this.currentResponse._id) {
         this.correctAnswers++;
-        this.flash('Đúng rồi!', 'success', { timeout: 1500 });
+        this.flash('Successfull', 'success', { timeout: 1500 });
       } else {
-        this.flash('Chưa chính xác! Vui lòng xem đáp án màu xanh.', 'error', { timeout: 3000 });
+        this.flash('Not correct! Please check the answer in blue.', 'error', { timeout: 3000 });
       }
     },
     nextQuestion() {
